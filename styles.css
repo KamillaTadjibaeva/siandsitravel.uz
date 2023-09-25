@@ -1,0 +1,101 @@
+Reset some default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bckgr.jpg'); /* Add your large background image here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Set text color to white for better visibility on the background image */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white; /* Set text color to white for better visibility on the background image */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; /* Allow for multiple rows */
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start of each row */
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tour-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 10px); /* Each tour card takes up 1/3 of the available width with some spacing */
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    color: #333; /* Set text color to a darker color for visibility */
+}
+
+.tour-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tour-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.tour-card p {
+    margin: 10px 0;
+}
+
+.tour-card a {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}
+
+.return-button {
+    display: inline-block;
+    background-color: #333;
+    color: white; /* Set text color to white */
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
